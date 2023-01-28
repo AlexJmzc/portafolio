@@ -10,7 +10,7 @@ const Contact = () => {
 
             <div className="contact__container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Háblame</h3>
+                    <h3 className="contact__title">Información de contacto</h3>
 
                     <div className="contact__info">
                         <div className="contact__card">
@@ -39,7 +39,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Gmail</h3>
                             <span className="contact__card-data">alexanderjmzc@gmail.com</span>
 
-                            <a href="mailto:alexanderjmzc@gamil.com" className="contact__button">Escríbeme {" "}
+                            <a href="mailto:alexanderjmzc@gmail.com" className="contact__button">Escríbeme {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
