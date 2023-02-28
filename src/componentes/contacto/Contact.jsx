@@ -1,7 +1,18 @@
-import React from "react";
 import "./contact.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_pk3c77n', 'template_rhjm59e', form.current, 'zfinsN8TD38pFQRZc')
+        e.target.reset();
+    };
+
     return (
        <section className="contact section" id="contact">
             <h2 className="section__title">Ponte en contacto</h2>
@@ -29,7 +40,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data">+593 999460606</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=0999460606&text=Hola, ¿podrías darme más información?" className="contact__button">Escríbeme {" "}
+                            <a href="https://api.whatsapp.com/send?phone=999460606&text=Hola, ¿podrías darme más información?" className="contact__button">Escríbeme {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
@@ -39,7 +50,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Gmail</h3>
                             <span className="contact__card-data">alexanderjmzc@gmail.com</span>
 
-                            <a href="mailto:alexanderjmzc@gmail.com" className="contact__button">Escríbeme {" "}
+                            <a href="https://www.google.com/intl/es/gmail/about/" className="contact__button">Escríbeme {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
@@ -48,7 +59,7 @@ const Contact = () => {
                 <div className="contact__content">
                     <h3 className="contact__title">Explícame tu proyecto</h3>
 
-                    <form className="contact__form">
+                    <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Nombre</label>
                             <input type="text"
@@ -71,7 +82,7 @@ const Contact = () => {
                             className="contact__form-input" placeholder="Explícame el proyecto"></textarea>
                         </div>
 
-                        <button className="button button--flex">
+                        <button className="button button--flex" >
                             Enviar
                             <svg
                             class="button__icon"
