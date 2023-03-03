@@ -179,8 +179,9 @@
   
   @media screen and (max-width: 576px) {
     .home__img {
-        width: 180px;
-        height: 180px;
+        width: 250px;
+        height: 250px;
+        margin-left: 2rem;
     }
 
     .home__hand {
