@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.css';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';  
 
@@ -15,7 +14,7 @@ const WorkItems = ({item}) => {
             <h3 className="work__title">{item.title}</h3>
             <Button variant="outline-light" onClick={handleShow}>
                 <a className="work__button">
-                        Ver más <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                    Ver más <i className="bx bx-right-arrow-alt work__button-icon"></i>
                 </a>
             </Button>
 
