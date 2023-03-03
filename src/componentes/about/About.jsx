@@ -7,9 +7,9 @@ import CV from "../../assets/CV.pdf";
 const About = () => {
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">Acerca de mí</h2>
+            <h2 className="section__title">About me</h2>
             <span className="section__subtitle">
-                Mi presentación
+                My description
             </span>
 
             <div className="about__container grid">
@@ -18,17 +18,20 @@ const About = () => {
                 <div className="about__data">
                     <Info />
 
-                    <p className="about__description">Soy un desarrollador de frontend y backend comprometido a crear soluciones de calidad
-                    y escalables para mis clientes.
-                    Puedo trabajar con diferentes lenguajes y frameworks, 
-                    incluyendo JavaScript, HTML, CSS, y frameworks como React y Angular 
-                    para el desarrollo de frontend, y lenguajes como Python, Java y C# 
-                    para el desarrollo de backend. <br></br>
-                    {/* En mi tiempo libre me gusta jugar videojuegos, escuchar música y hacer deporte, especialmente fútbol */}
+                    <p className="about__description">I am a frontend and backend developer committed to creating quality solutions
+                     for my clients.
+                    I can work with different languages ​​and frameworks,
+                    including JavaScript, HTML, CSS, and frameworks like React and Angular
+                    for frontend development, and languages ​​like Python, Java, and C#
+                    for backend development. <br></br><br />
+                    In my free time, I enjoy playing video-games with friends. Not only is it a fun and 
+                    exciting hobby, but it also helps me to be a better developer. Playing video games requires quick thinking, teamwork,
+                    problem-solving skills and the ability to work well under pressure. Furthermore, being part of a team, helps me to better
+                    understand the importance of effective communication and cooperation in order to achieve a common goal. 
                     </p>
 
                     <a download="" href={CV} className="button button--flex">
-                        Descargar CV
+                        Download CV
                     <svg
                     class="button__icon"
                     xmlns="http://www.w3.org/2000/svg"

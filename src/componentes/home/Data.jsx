@@ -58,17 +58,17 @@ const Data = () => {
             </h1>
 
             <h3 className="home__subtitle">
-                Desarrollador de Software
+                Software developer
             </h3>
 
             <p className="home__description">
-                Soy un desarrollador de Software de Ambato, dedicado y responsable con mi trabajo,
-                y con muchas ganas de seguir ampliando mis conocimientos.
+                I am a Software developer from Ambato, dedicated and responsible with my work,
+                and eager to continue expanding my knowledge.
             </p>
 
             <a href="#contact" className="button button--flex">
                 
-                Contáctame
+                Contact me
                 <svg
                   class="button__icon"
                   xmlns="http://www.w3.org/2000/svg"

@@ -15,13 +15,13 @@ const Contact = () => {
 
     return (
        <section className="contact section" id="contact">
-            <h2 className="section__title">Ponte en contacto</h2>
+            <h2 className="section__title">Get in touch</h2>
 
-            <span className="section__subtitle">Contáctame</span>
+            <span className="section__subtitle">Contact me</span>
 
             <div className="contact__container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Información de contacto</h3>
+                    <h3 className="contact__title">Contact Information</h3>
 
                     <div className="contact__info">
                         <div className="contact__card">
@@ -30,7 +30,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Outlook</h3>
                             <span className="contact__card-data">alexanderjmzc@outlook.es</span>
 
-                            <a href="mailto:alexanderjmzc@outlook.es" className="contact__button">Escríbeme {" "}
+                            <a href="mailto:alexanderjmzc@outlook.es" className="contact__button">Write me {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
@@ -40,7 +40,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data">+593 999460606</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=999460606&text=Hola, ¿podrías darme más información?" className="contact__button">Escríbeme {" "}
+                            <a href="https://api.whatsapp.com/send?phone=+593999460606&text=Hola, ¿podrías darme más información?" className="contact__button">Write me {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
@@ -50,22 +50,22 @@ const Contact = () => {
                             <h3 className="contact__card-title">Gmail</h3>
                             <span className="contact__card-data">alexanderjmzc@gmail.com</span>
 
-                            <a href="https://www.google.com/intl/es/gmail/about/" className="contact__button">Escríbeme {" "}
+                            <a href="https://www.google.com/intl/es/gmail/about/" className="contact__button">Write me {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Explícame tu proyecto</h3>
+                    <h3 className="contact__title">Explain me your project</h3>
 
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Nombre</label>
+                            <label className="contact__form-tag">Name</label>
                             <input type="text"
                             name="name"
                             className="contact__form-input"
-                            placeholder="Escribe tu nombre"/>
+                            placeholder="Write your name"/>
                         </div>
 
                         <div className="contact__form-div">
@@ -73,17 +73,17 @@ const Contact = () => {
                             <input type="email"
                             name="email"
                             className="contact__form-input"
-                            placeholder="Escribe tu correo"/>
+                            placeholder="Write your email"/>
                         </div>
 
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">Proyecto</label>
+                            <label className="contact__form-tag">Project</label>
                             <textarea name="project" cols="30" rows="10"
-                            className="contact__form-input" placeholder="Explícame el proyecto"></textarea>
+                            className="contact__form-input" placeholder="Describe your project"></textarea>
                         </div>
 
                         <button className="button button--flex" >
-                            Enviar
+                            Send
                             <svg
                             class="button__icon"
                             xmlns="http://www.w3.org/2000/svg"

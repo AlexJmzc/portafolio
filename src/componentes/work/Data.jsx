@@ -21,7 +21,7 @@ export const projectsData = [
         id: 2,
         image: Trabajo2,
         title: "Algoritmo A* 8puzzle Java",
-        category: "Escritorio",
+        category: "Desktop",
         url: "https://github.com/AlexJmzc/8Puzzle",
         descripcion: "Sistema desarrollado en Java que resuelve el juego 8-Puzzle mediante el " + 
         "algoritmo A*.",
@@ -30,7 +30,7 @@ export const projectsData = [
         id: 3,
         image: Trabajo3,
         title: "Algoritmo genético 8reinas Java",
-        category: "Escritorio",
+        category: "Desktop",
         url: "https://github.com/AlexJmzc/8Reinas",
         descripcion: "Sistema desarrollado en Java que resuelve el juego 8-Reinas mediante un " + 
         "algoritmo genético.",
@@ -48,7 +48,7 @@ export const projectsData = [
         id: 5,
         image: Trabajo5,
         title: "Alarma comunitaria C#",
-        category: "Escritorio",
+        category: "Desktop",
         url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
         descripcion: "Sistema desarrollado en C# que simula una alarma comunitaria.",
     },
@@ -74,7 +74,7 @@ export const projectsData = [
         id: 8,
         image: Trabajo8,
         title: "Sistema de compras móvil",
-        category: "Movil",
+        category: "Mobile",
         url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
         descripcion: "Sistema desarrollado en C# que simula la compra de artículos de " + 
         "supermercado desde un smartphone.",
@@ -83,15 +83,15 @@ export const projectsData = [
 
 export const projectsNav = [
     {
-        name: 'Todos',
+        name: 'All',
     },
     {
         name: 'Web',
     },
     {
-        name: 'Escritorio',
+        name: 'Desktop',
     },
     {
-        name: 'Movil',
+        name: 'Mobile',
     },
 ]

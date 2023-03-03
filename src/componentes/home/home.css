@@ -177,7 +177,7 @@
   
 
   
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 576px) {
     .home__img {
         width: 180px;
         height: 180px;
@@ -187,5 +187,7 @@
         width: 22px;
         height: 22px;
     }
+
+    
   }
   

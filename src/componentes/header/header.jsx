@@ -14,7 +14,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#home" className="nav__link active-link">
                                 <i className="uil uil-estate nav__icon"></i>
-                                Inicio
+                                Home
                             </a>
                         </li>
 
@@ -22,7 +22,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#about" className="nav__link">
                                 <i className="uil uil-user nav__icon"></i>
-                                Información
+                                Information
                             </a>
                         </li>
 
@@ -38,7 +38,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#portafolio" className="nav__link">
                                 <i className="uil uil-scenery nav__icon"></i>
-                                Portafolio
+                                Portfolio
                             </a>
                         </li>
 
@@ -46,7 +46,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#contact" className="nav__link">
                                 <i className="uil uil-message nav__icon"></i>
-                                Contacto
+                                Contact
                             </a>
                         </li>
                     </ul>
