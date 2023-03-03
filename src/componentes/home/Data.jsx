@@ -62,7 +62,7 @@ const Data = () => {
             </h3>
 
             <p className="home__description">
-                I am a Software developer from Ambato, dedicated and responsible with my work,
+                I'm a Software developer from Ambato, dedicated and responsible with my work,
                 and eager to continue expanding my knowledge.
             </p>
 
