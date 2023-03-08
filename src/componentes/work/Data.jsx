@@ -1,5 +1,11 @@
 import Trabajo1 from "../../assets/laravel.jpeg";
 import Trabajo2 from "../../assets/8puzzle.png";
+import Trabajo2_1 from "../../assets/1.png";
+import Trabajo2_2 from "../../assets/2.png";
+import Trabajo2_3 from "../../assets/3.png";
+import Trabajo2_4 from "../../assets/4.png";
+import Trabajo2_5 from "../../assets/5.png";
+import Trabajo2_6 from "../../assets/6.png";
 import Trabajo3 from "../../assets/8reinas.jpg";
 import Trabajo4 from "../../assets/tiendaWeb.jpg";
 import Trabajo5 from "../../assets/c.png";
@@ -11,6 +17,7 @@ export const projectsData = [
     {
         id: 1,
         image: Trabajo1,
+        images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Sistema de inventario Laravel",
         category: "Web",
         url: "https://github.com/Ludwing08/InventarioHGPT",
@@ -20,6 +27,7 @@ export const projectsData = [
     {
         id: 2,
         image: Trabajo2,
+        images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Algoritmo A* 8puzzle Java",
         category: "Desktop",
         url: "https://github.com/AlexJmzc/8Puzzle",
@@ -29,6 +37,7 @@ export const projectsData = [
     {
         id: 3,
         image: Trabajo3,
+        images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Algoritmo genético 8reinas Java",
         category: "Desktop",
         url: "https://github.com/AlexJmzc/8Reinas",
@@ -38,6 +47,7 @@ export const projectsData = [
     {
         id: 4,
         image: Trabajo4,
+        images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Tienda virtual",
         category: "Web",
         url: "https://github.com/Anthony-svg/Webapp",
@@ -47,6 +57,7 @@ export const projectsData = [
     {
         id: 5,
         image: Trabajo5,
+        images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Alarma comunitaria C#",
         category: "Desktop",
         url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
@@ -55,6 +66,7 @@ export const projectsData = [
     {
         id: 6,
         image: Trabajo6,
+        images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Gestor de estudiantes Java Web",
         category: "Web",
         url: "https://github.com/AlexJmzc/WebCV",
@@ -64,6 +76,7 @@ export const projectsData = [
     {
         id: 7,
         image: Trabajo7,
+        images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Gestor de eventos académicos Angular",
         category: "Web",
         url: "https://github.com/Exayfer12/cursosFISEI",
@@ -73,6 +86,7 @@ export const projectsData = [
     {
         id: 8,
         image: Trabajo8,
+        images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Sistema de compras móvil",
         category: "Mobile",
         url: "https://github.com/AlexJmzc/ProyectoDistribuidas",

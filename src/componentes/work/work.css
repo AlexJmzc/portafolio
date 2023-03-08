@@ -947,6 +947,15 @@ select {
   padding: var(--bs-modal-padding);
 }
 
+.modal-body .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+
 .modal-footer {
   display: flex;
   flex-shrink: 0;
