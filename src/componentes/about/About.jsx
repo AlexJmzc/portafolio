@@ -30,7 +30,7 @@ const About = () => {
                     understand the importance of effective communication and cooperation in order to achieve a common goal. 
                     </p>
 
-                    <a download="" href={CV} className="button button--flex">
+                    <a download="CV_Javier_Jiménez" href={CV} className="button button--flex">
                         Download CV
                     <svg
                     class="button__icon"

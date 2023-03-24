@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal'; 
 import Carousel from 'react-bootstrap/Carousel';
-//import 'bootstrap/dist/css/bootstrap.css';
 
 
 const WorkItems = ({item}) => {
