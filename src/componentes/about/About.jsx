@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./about.css";
 import AboutImg from "../../assets/foto2.jpeg";
 import Info from "./Info";
 import CV from "../../assets/CV.pdf";
 
 const About = () => {
+    const [ID, setID] = useState(1)
+
     return (
         <section className="about section" id="about">
             <h2 className="section__title">About me</h2>

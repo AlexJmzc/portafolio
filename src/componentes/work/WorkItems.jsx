@@ -20,7 +20,7 @@ const WorkItems = ({item}) => {
 
     //Componente
     return (
-       <div className="work__card" key={item.id}>
+       <div className="work__card" key={item.projectID}>
             <img src={item.image} alt="" className="work__img"/>
             <h3 className="work__title">{item.title}</h3>
             <Button variant="outline-light" onClick={handleShow}>
