@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Backend = () => {
+const Backend = ({data}) => {
     return (
         <div className="skills__content">
             <h3 className="skills__title">Backend</h3>
@@ -13,7 +13,7 @@ const Backend = () => {
                         
                         <div>
                             <h3 className="skills__name">PHP</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
                     
@@ -23,7 +23,7 @@ const Backend = () => {
                         
                         <div>
                             <h3 className="skills__name">MySQL</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
                     
@@ -33,7 +33,7 @@ const Backend = () => {
                         
                         <div>
                             <h3 className="skills__name">SQL</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
                     
@@ -44,7 +44,7 @@ const Backend = () => {
                         
                         <div>
                             <h3 className="skills__name">Python</h3>
-                            <span className="skills__level">Basic</span>
+                            <span className="skills__level">{data.level_basic}</span>
                         </div>
                     </div>
                     
@@ -54,7 +54,7 @@ const Backend = () => {
                         
                         <div>
                             <h3 className="skills__name">C#</h3>
-                            <span className="skills__level">Basic</span>
+                            <span className="skills__level">{data.level_basic}</span>
                         </div>
                     </div>
                     
@@ -64,7 +64,7 @@ const Backend = () => {
                         
                         <div>
                             <h3 className="skills__name">Java</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
                     

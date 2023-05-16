@@ -13,6 +13,16 @@ import Trabajo6 from "../../assets/javaWeb.jpg";
 import Trabajo7 from "../../assets/angular.png";
 import Trabajo8 from "../../assets/compras.jpg";
 
+export const titles = {
+    title: 'Portfolio',
+    subtitle: 'My Works'
+}
+
+export const titulos = {
+    title: 'Portafolio',
+    subtitle: 'Mis Trabajos'
+}
+
 export const projectsData = [
     {
         projectID: 1,
@@ -23,6 +33,8 @@ export const projectsData = [
         url: "https://github.com/Ludwing08/InventarioHGPT",
         descripcion: "Inventory system developed with Laravel, focused on the information on the " +
         "managers, accessories and programs of each computer equipment within a company",
+        more: "See more",
+        close: "Close"
     },
     {
         projectID: 2,
@@ -32,6 +44,8 @@ export const projectsData = [
         category: "Desktop",
         url: "https://github.com/AlexJmzc/8Puzzle",
         descripcion: "System developed in Java that implements an A* algorithm to solve the 8-puzzle game",
+        more: "See more",
+        close: "Close"
     },
     {
         projectID: 3,
@@ -42,6 +56,8 @@ export const projectsData = [
         url: "https://github.com/AlexJmzc/8Reinas",
         descripcion: "System developed in Java that implements a genetic algorithm to solve " + 
         "the game of the 8 Queens",
+        more: "See more",
+        close: "Close"
     },
     {
         projectID: 4,
@@ -52,6 +68,8 @@ export const projectsData = [
         url: "https://github.com/Anthony-svg/Webapp",
         descripcion: "Web store developed with HTML, CSS and JavaScript focused on the sale of " + 
         "computer items online",
+        more: "See more",
+        close: "Close"
     },
     {
         projectID: 5,
@@ -61,6 +79,8 @@ export const projectsData = [
         category: "Desktop",
         url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
         descripcion: "Sistema desarrollado en C# que simula una alarma comunitaria.",
+        more: "See more",
+        close: "Close"
     },
     {
         projectID: 6,
@@ -71,6 +91,8 @@ export const projectsData = [
         url: "https://github.com/AlexJmzc/WebCV",
         descripcion: "Sistema desarrollado con Java Web que realiza el CRUD básico de " + 
         "estudiantes.",
+        more: "See more",
+        close: "Close"
     },
     {
         projectID: 7,
@@ -81,6 +103,9 @@ export const projectsData = [
         url: "https://github.com/Exayfer12/cursosFISEI",
         descripcion: "Sistema desarrollado con Angular que permite la venta de cursos, gestión " + 
         "de la parte administrativa y generación de certificados.",
+       
+        more: "See more",
+        close: "Close"
     },
     {
         projectID: 8,
@@ -91,6 +116,8 @@ export const projectsData = [
         url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
         descripcion: "Sistema desarrollado en C# que simula la compra de artículos de " + 
         "supermercado desde un smartphone.",
+        more: "See more",
+        close: "Close"
     }
 ];
 
@@ -104,6 +131,8 @@ export const proyectosData = [
         url: "https://github.com/Ludwing08/InventarioHGPT",
         descripcion: "Sistema de inventario desarrollado con Laravel enfocado a la información " +
         "sobre los responsables, accesorios y programas de cada equipo informático dentro de una empresa",
+        more: "Ver más",
+        close: "Cerrar"
     },
     {
         projectID: 2,
@@ -114,6 +143,8 @@ export const proyectosData = [
         url: "https://github.com/AlexJmzc/8Puzzle",
         descripcion: "Sistema desarrollado en Java que implementa un algoritmo A* para la resolución del " +
         "juego 8-Puzzle",
+        more: "Ver más",
+        close: "Cerrar"
     },
     {
         projectID: 3,
@@ -124,6 +155,8 @@ export const proyectosData = [
         url: "https://github.com/AlexJmzc/8Reinas",
         descripcion: "Sistema desarrollado en Java que implementa un algoritmo genético" + 
         " para resolver el juego de las 8 Reinas",
+        more: "Ver más",
+        close: "Cerrar"
     },
     {
         projectID: 4,
@@ -134,6 +167,8 @@ export const proyectosData = [
         url: "https://github.com/Anthony-svg/Webapp",
         descripcion: "Tienda web desarollada con HTML, CSS y JS enfocada a la venta de artículos " + 
         "de computación en línea",
+        more: "Ver más",
+        close: "Cerrar"
     },
     {
         projectID: 5,
@@ -143,6 +178,8 @@ export const proyectosData = [
         category: "Escritorio",
         url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
         descripcion: "Sistema desarrollado en C# que simula una alarma comunitaria.",
+        more: "Ver más",
+        close: "Cerrar"
     },
     {
         projectID: 6,
@@ -153,6 +190,8 @@ export const proyectosData = [
         url: "https://github.com/AlexJmzc/WebCV",
         descripcion: "Sistema desarrollado con Java Web que realiza el CRUD básico de " + 
         "estudiantes.",
+        more: "Ver más",
+        close: "Cerrar"
     },
     {
         projectID: 7,
@@ -163,6 +202,8 @@ export const proyectosData = [
         url: "https://github.com/Exayfer12/cursosFISEI",
         descripcion: "Sistema desarrollado con Angular que permite la venta de cursos, gestión " + 
         "de la parte administrativa y generación de certificados.",
+        more: "Ver más",
+        close: "Cerrar"
     },
     {
         projectID: 8,
@@ -173,6 +214,8 @@ export const proyectosData = [
         url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
         descripcion: "Sistema desarrollado en C# que simula la compra de artículos de " + 
         "supermercado desde un smartphone.",
+        more: "Ver más",
+        close: "Cerrar"
     }
 ];
 

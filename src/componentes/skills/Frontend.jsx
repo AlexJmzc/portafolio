@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Frontend = () => {
+const Frontend = ({data}) => {
     return (
         <div className="skills__content">
             <h3 className="skills__title">Frontend</h3>
@@ -13,7 +13,7 @@ const Frontend = () => {
                         
                         <div>
                             <h3 className="skills__name">HTML</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
                     
@@ -23,7 +23,7 @@ const Frontend = () => {
                         
                         <div>
                             <h3 className="skills__name">CSS</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
                     
@@ -33,7 +33,7 @@ const Frontend = () => {
                         
                         <div>
                             <h3 className="skills__name">JavaScript</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
                     
@@ -44,7 +44,7 @@ const Frontend = () => {
                         
                         <div>
                             <h3 className="skills__name">Bootstrap</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
                     
@@ -54,7 +54,7 @@ const Frontend = () => {
                         
                         <div>
                             <h3 className="skills__name">Angular</h3>
-                            <span className="skills__level">Basic</span>
+                            <span className="skills__level">{data.level_basic}</span>
                         </div>
                     </div>
                     
@@ -64,7 +64,7 @@ const Frontend = () => {
                         
                         <div>
                             <h3 className="skills__name">React</h3>
-                            <span className="skills__level">Basic</span>
+                            <span className="skills__level">{data.level_basic}</span>
                         </div>
                     </div>
                     

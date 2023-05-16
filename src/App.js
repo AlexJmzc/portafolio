@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './componentes/header/header';
 import Home from './componentes/home/Home';
 import About from './componentes/about/About';
 import Skills from './componentes/skills/Skills';
-import Contact from './componentes/contacto/Contact';
+import Contact from './componentes/contact/Contact';
 import Work from './componentes/work/Work';
 
 function App() {
+  const[languaje, setLanguaje] = useState({name: 'English'});
+
   return (
     <>
-    <Header/>
+    <Header languaje={languaje} setLanguaje={setLanguaje}/>
 
     <main className='main'>
-      <Home />
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
+      <Home languaje={languaje}/>
+      <About languaje={languaje}/>
+      <Skills languaje={languaje}/>
+      <Work languaje={languaje}/>
+      <Contact languaje={languaje}/>
     </main>
     </>
   )

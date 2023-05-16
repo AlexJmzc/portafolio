@@ -1,29 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 import { headerData } from "./Data";
 import { datosHeader } from "./Data";
 
-const Header = () => {
+const Header = ({languaje, setLanguaje}) => {
     const[Toggle, showMenu] = useState(false);
-    const[languaje, changeLanguaje] = useState(false);
+    //const[languaje, changeLanguaje] = useState({name: 'English'});
+    const[data, changeData] = useState([]);
 
-    var dt = headerData;
-
-    const change = () => {
-        console.log()
-        if(languaje == true) {
-            dt = headerData;
-            console.log(dt.home + "1111");
-            changeLanguaje(!languaje)
+    useEffect(() => {
+        if(languaje.name === 'English') {
+            changeData(headerData);
         } else {
-            dt = datosHeader;
-            console.log(dt.home + "2222");
-            changeLanguaje(!languaje)
+            changeData(datosHeader);
         }
+    }, [languaje]);
 
-        console.log(dt.home)
-        
-    };
+    const handleClick = (e) => {
+        if(languaje.name === 'English') {
+            setLanguaje({name: 'Spanish'});
+        } else {
+            setLanguaje({name: 'English'});
+        } 
+    }
 
     return (
         <header className="header">
@@ -36,7 +35,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#home" className="nav__link active-link">
                                 <i className="uil uil-estate nav__icon"></i>
-                                {dt.home}
+                                {data.home}
                             </a>
                         </li>
 
@@ -44,7 +43,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#about" className="nav__link">
                                 <i className="uil uil-user nav__icon"></i>
-                                {dt.information}
+                                {data.information}
                             </a>
                         </li>
 
@@ -52,7 +51,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#skills" className="nav__link">
                                 <i className="uil uil-file-alt nav__icon"></i>
-                                {dt.skills}
+                                {data.skills}
                             </a>
                         </li>
 
@@ -60,7 +59,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#portafolio" className="nav__link">
                                 <i className="uil uil-scenery nav__icon"></i>
-                                {dt.portfolio}
+                                {data.portfolio}
                             </a>
                         </li>
 
@@ -68,12 +67,14 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#contact" className="nav__link">
                                 <i className="uil uil-message nav__icon"></i>
-                                {dt.contact}
+                                {data.contact}
                             </a>
                         </li>
-                        <label class="switch" onClick={change}>
+                        <label class="switch"> 
                             <input type="checkbox"/>
-                            <span class="slider round"></span>
+                            <span class="slider round" onClick={(e) => {
+                                handleClick(e);
+                            }}></span>
                         </label>
                     </ul>
 

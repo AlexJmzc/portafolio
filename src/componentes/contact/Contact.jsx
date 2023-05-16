@@ -1,8 +1,18 @@
 import "./contact.css";
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { contactData, datosContacto } from "./Data";
 import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+const Contact = ({languaje}) => {
+    const[data, setData] = useState([]);
+
+    useEffect(() => {
+        if(languaje.name === 'English') {
+            setData(contactData);
+        } else {
+            setData(datosContacto);
+        }
+    })
 
     const form = useRef();
 
@@ -15,13 +25,13 @@ const Contact = () => {
 
     return (
        <section className="contact section" id="contact">
-            <h2 className="section__title">Get in touch</h2>
+            <h2 className="section__title">{data.title}</h2>
 
-            <span className="section__subtitle">Contact me</span>
+            <span className="section__subtitle">{data.subtitle}</span>
 
             <div className="contact__container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Contact Information</h3>
+                    <h3 className="contact__title">{data.contact_title}</h3>
 
                     <div className="contact__info">
                         <div className="contact__card">
@@ -30,7 +40,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Outlook</h3>
                             <span className="contact__card-data">alexanderjmzc@outlook.es</span>
 
-                            <a href="mailto:alexanderjmzc@outlook.es" className="contact__button">Write me {" "}
+                            <a href="mailto:alexanderjmzc@outlook.es" className="contact__button">{data.contact_button_title} {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
@@ -40,7 +50,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data">+593 999460606</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=+593999460606&text=Hola, ¿podrías darme más información?" className="contact__button">Write me {" "}
+                            <a href="https://api.whatsapp.com/send?phone=+593999460606&text=Hi, can you send me more information, please?" className="contact__button">{data.contact_button_title} {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
@@ -50,22 +60,22 @@ const Contact = () => {
                             <h3 className="contact__card-title">Gmail</h3>
                             <span className="contact__card-data">alexanderjmzc@gmail.com</span>
 
-                            <a href="https://www.google.com/intl/es/gmail/about/" className="contact__button">Write me {" "}
+                            <a href="https://www.google.com/intl/es/gmail/about/" className="contact__button">{data.contact_button_title} {" "}
                             <i class="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Explain me your project</h3>
+                    <h3 className="contact__title">{data.contact_project_title}</h3>
 
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Name</label>
+                            <label className="contact__form-tag">{data.name}</label>
                             <input type="text"
                             name="name"
                             className="contact__form-input"
-                            placeholder="Write your name"/>
+                            placeholder={data.name_placeholder}/>
                         </div>
 
                         <div className="contact__form-div">
@@ -73,17 +83,17 @@ const Contact = () => {
                             <input type="email"
                             name="email"
                             className="contact__form-input"
-                            placeholder="Write your email"/>
+                            placeholder={data.email_placeholder}/>
                         </div>
 
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">Project</label>
+                            <label className="contact__form-tag">{data.project}</label>
                             <textarea name="project" cols="30" rows="10"
-                            className="contact__form-input" placeholder="Describe your project"></textarea>
+                            className="contact__form-input" placeholder={data.project_placeholder}></textarea>
                         </div>
 
                         <button className="button button--flex" >
-                            Send
+                            {data.send_button}
                             <svg
                             class="button__icon"
                             xmlns="http://www.w3.org/2000/svg"

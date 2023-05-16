@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Data = () => {
+const Data = ({data}) => {
     return (
         <div className="home__data">
             <h1 className="home__title">
@@ -58,17 +58,16 @@ const Data = () => {
             </h1>
 
             <h3 className="home__subtitle">
-                Software developer
+                {data.subtitle}
             </h3>
 
             <p className="home__description">
-                I'm a Software developer from Ambato, dedicated and responsible with my work,
-                and eager to continue expanding my knowledge.
+                {data.description}
             </p>
 
             <a href="#contact" className="button button--flex">
                 
-                Contact me
+                {data.contact_button}
                 <svg
                   class="button__icon"
                   xmlns="http://www.w3.org/2000/svg"

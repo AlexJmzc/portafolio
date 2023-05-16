@@ -1,38 +1,36 @@
-import { aboutData } from "./Data";
-import React, { useState } from "react";
+import React from "react";
 
 
-const Info = () => {
-    const [data, setData] = useState(aboutData)
+const Info = ({data}) => {
 
     return (
         <div className="about__info grid">
             <div className="about__box">
                 <i class="bx bx-award about__icon"></i>
                 <h3 className="about__title">
-                    {data[0].experience_title}
+                    {data.experience_title}
                 </h3>
 
                 <span className="about__subtitle">
-                    1 year
+                    {data.time}
                 </span>
             </div>
 
             <div className="about__box">
                 <i class="bx bx-briefcase-alt about__icon"></i>
                 <h3 className="about__title">
-                    Projects
+                    {data.projects_name}
                 </h3>
 
                 <span className="about__subtitle">
-                    10 + Projects
+                    {data.projects_title}
                 </span>
             </div>
 
             <div className="about__box">
                 <i class="bx bx-support about__icon"></i>
                 <h3 className="about__title">
-                    Support
+                    {data.support_title}
                 </h3>
 
                 <span className="about__subtitle">

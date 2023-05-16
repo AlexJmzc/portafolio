@@ -1,6 +1,6 @@
 import React from "react";
 
-const ScrollDown = () => {
+const ScrollDown = ({data}) => {
     return (
         <div className="home__scroll">
             <a href="#about" className="home__scroll-button button--flex">
@@ -40,7 +40,7 @@ const ScrollDown = () => {
                     ></path>
                 </svg>
                 <span className="home__scroll-name">
-                    Go down
+                    {data.scrollHome}
                 </span>
                 <i class="uil uil-arrow-down home__scroll.arrow"></i>
             </a>

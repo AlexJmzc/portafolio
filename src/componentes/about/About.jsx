@@ -1,39 +1,41 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { aboutData } from "./Data";
+import { datos } from "./Data";
 import "./about.css";
 import AboutImg from "../../assets/foto2.jpeg";
 import Info from "./Info";
 import CV from "../../assets/CV.pdf";
 
-const About = () => {
-    const [ID, setID] = useState(1)
+const About = ({languaje}) => {
+    const[data, setData] = useState([]);
+
+    useEffect(() => {
+        if(languaje.name === 'English') {
+            setData(aboutData);
+        } else {
+            setData(datos);
+        }
+    })
 
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">About me</h2>
+            <h2 className="section__title">{data.title}</h2>
             <span className="section__subtitle">
-                My description
+                {data.subtitle}
             </span>
 
             <div className="about__container grid">
                 <img src={AboutImg} alt="" className="about__img" />
 
                 <div className="about__data">
-                    <Info />
+                    <Info data={data}/>
 
-                    <p className="about__description">I am a frontend and backend developer committed to creating quality solutions
-                     for my clients.
-                    I can work with different languages ​​and frameworks,
-                    including JavaScript, HTML, CSS, and frameworks like React and Angular
-                    for frontend development, and languages ​​like Python, Java, and C#
-                    for backend development. <br></br><br />
-                    In my free time, I enjoy playing video-games with friends. Not only is it a fun and 
-                    exciting hobby, but it also helps me to be a better developer. Playing video games requires quick thinking, teamwork,
-                    problem-solving skills and the ability to work well under pressure. Furthermore, being part of a team, helps me to better
-                    understand the importance of effective communication and cooperation in order to achieve a common goal. 
+                    <p className="about__description">
+                        {data.description}
                     </p>
 
                     <a download="CV_Javier_Jiménez" href={CV} className="button button--flex">
-                        Download CV
+                        {data.dw_title}
                     <svg
                     class="button__icon"
                     xmlns="http://www.w3.org/2000/svg"

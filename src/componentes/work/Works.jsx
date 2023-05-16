@@ -1,23 +1,35 @@
 import React, { useEffect, useState } from "react";
-import { projectsData } from "./Data";
-import { projectsNav } from "./Data";
 import WorkItems from "./WorkItems";
+import { projectsData, proyectosData } from "./Data";
 
-const Works = () => {
-        const [item, setItem] = useState({name: "All"});
-        const [projects, setProjects] = useState([]);
-        const [active, setActive] = useState(0);
+const Works = ({languaje, nav}) => {
+    const [dataWorks, setDataWorks] = useState(projectsData);
+    const [item, setItem] = useState({name: "All"});
+    const [projects, setProjects] = useState(projectsData);
+    const [active, setActive] = useState(0);
 
-        useEffect(() => {
-            if(item.name === "All") {
-                setProjects(projectsData);
-            } else {
-                const newProjects = projectsData.filter((project) => {
-                    return project.category === item.name;
-                });
-                setProjects(newProjects);
-            }
-        }, [item]);
+
+    useEffect(() => {
+        if(languaje.name === "English") {
+            setDataWorks(projectsData);
+        } else {
+            setDataWorks(proyectosData);
+        }
+
+        if(item.name === "All" || item.name === "Todos") {
+            setProjects(dataWorks);
+            console.log("Proyectos");
+            console.log(projects);
+        } else {
+            const newProjects = dataWorks.filter((project) => {
+                return project.category === item.name;
+            });
+           
+            setProjects(newProjects);
+        }
+
+        
+    }, [dataWorks, item, languaje]);
 
     const handleClick = (e, index) => {
         setItem({name: e.target.textContent});
@@ -27,7 +39,7 @@ const Works = () => {
     return (
         <div>
             <div className="work__filters">
-                {projectsNav.map((item, index) => {
+                {nav.map((item, index) => {
                     return <span onClick={(e) => {
                         handleClick(e, index);
                     }} 
@@ -40,7 +52,7 @@ const Works = () => {
 
             <div className="work__container container grid">
                 {projects.map((item) => {
-                    return <WorkItems item={item} key={item.projectID}/>
+                    return <WorkItems item={item}/>
                 })}
             </div>
         </div>
