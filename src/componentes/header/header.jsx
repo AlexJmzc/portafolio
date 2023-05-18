@@ -5,7 +5,6 @@ import { datosHeader } from "./Data";
 
 const Header = ({languaje, setLanguaje}) => {
     const[Toggle, showMenu] = useState(false);
-    //const[languaje, changeLanguaje] = useState({name: 'English'});
     const[data, changeData] = useState([]);
 
     useEffect(() => {

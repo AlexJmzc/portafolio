@@ -18,8 +18,6 @@ const Works = ({languaje, nav}) => {
 
         if(item.name === "All" || item.name === "Todos") {
             setProjects(dataWorks);
-            console.log("Proyectos");
-            console.log(projects);
         } else {
             const newProjects = dataWorks.filter((project) => {
                 return project.category === item.name;
