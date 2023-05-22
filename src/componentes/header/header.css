@@ -147,7 +147,14 @@
     .nav__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        align-items: center;
         gap: 2rem;
+    }
+
+    .nav__list .nav__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .nav__icon {

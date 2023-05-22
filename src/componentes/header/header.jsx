@@ -69,12 +69,14 @@ const Header = ({languaje, setLanguaje}) => {
                                 {data.contact}
                             </a>
                         </li>
-                        <label class="switch"> 
-                            <input type="checkbox"/>
-                            <span class="slider round" onClick={(e) => {
-                                handleClick(e);
-                            }}></span>
-                        </label>
+                        <li className="nav__item">
+                            <label class="switch"> 
+                                <input type="checkbox"/>
+                                <span class="slider round" onClick={(e) => {
+                                    handleClick(e);
+                                }}></span>
+                            </label>
+                        </li>
                     </ul>
 
                     

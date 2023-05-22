@@ -8,10 +8,10 @@ import Trabajo2_5 from "../../assets/5.png";
 import Trabajo2_6 from "../../assets/6.png";
 import Trabajo3 from "../../assets/8reinas.jpg";
 import Trabajo4 from "../../assets/tiendaWeb.jpg";
-import Trabajo5 from "../../assets/c.png";
-import Trabajo6 from "../../assets/javaWeb.jpg";
-import Trabajo7 from "../../assets/angular.png";
-import Trabajo8 from "../../assets/compras.jpg";
+import Trabajo5 from "../../assets/Food.jpg";
+import Trabajo6 from "../../assets/coc.jpg";
+import Trabajo7 from "../../assets/flappy.jpg";
+import Trabajo8 from "../../assets/portfolio.png";
 
 export const titles = {
     title: 'Portfolio',
@@ -75,10 +75,11 @@ export const projectsData = [
         projectID: 5,
         image: Trabajo5,
         images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
-        title: "Alarma comunitaria C#",
-        category: "Desktop",
-        url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
-        descripcion: "Sistema desarrollado en C# que simula una alarma comunitaria.",
+        title: "Food Web Store",
+        category: "Web",
+        url: "https://github.com/AlexJmzc/WebStore",
+        descripcion: "Responsive Single Page Web Store developed with HTML, CSS and JavaScript that shows the content " + 
+        " of a fast food store",
         more: "See more",
         close: "Close"
     },
@@ -86,11 +87,11 @@ export const projectsData = [
         projectID: 6,
         image: Trabajo6,
         images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
-        title: "Gestor de estudiantes Java Web",
+        title: "CoC Web",
         category: "Web",
-        url: "https://github.com/AlexJmzc/WebCV",
-        descripcion: "Sistema desarrollado con Java Web que realiza el CRUD básico de " + 
-        "estudiantes.",
+        url: "https://github.com/AlexJmzc/CoCWeb",
+        descripcion: "Responsive Single Page Web developed with HTML, CSS and JavaScript that shows content " + 
+        "of the mobile game 'Clash of Clans'",
         more: "See more",
         close: "Close"
     },
@@ -98,12 +99,10 @@ export const projectsData = [
         projectID: 7,
         image: Trabajo7,
         images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
-        title: "Gestor de eventos académicos Angular",
+        title: "Flappy Bird",
         category: "Web",
-        url: "https://github.com/Exayfer12/cursosFISEI",
-        descripcion: "Sistema desarrollado con Angular que permite la venta de cursos, gestión " + 
-        "de la parte administrativa y generación de certificados.",
-       
+        url: "https://github.com/AlexJmzc/FlappyBird",
+        descripcion: "Web page that simulates the game named 'Flappy Bird' functioning",
         more: "See more",
         close: "Close"
     },
@@ -111,11 +110,10 @@ export const projectsData = [
         projectID: 8,
         image: Trabajo8,
         images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
-        title: "Sistema de compras móvil",
-        category: "Mobile",
-        url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
-        descripcion: "Sistema desarrollado en C# que simula la compra de artículos de " + 
-        "supermercado desde un smartphone.",
+        title: "Portfolio",
+        category: "Web",
+        url: "https://github.com/AlexJmzc/portafolio",
+        descripcion: "Web project developed with React JS that refers to this web portfolio",
         more: "See more",
         close: "Close"
     }
@@ -176,8 +174,9 @@ export const proyectosData = [
         images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
         title: "Alarma comunitaria C#",
         category: "Escritorio",
-        url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
-        descripcion: "Sistema desarrollado en C# que simula una alarma comunitaria.",
+        url: "https://github.com/AlexJmzc/WebStore",
+        descripcion: "Tienda Web Responsiva Single Page desarrollada con HTML, CSS y JavaScript que " +
+        "muestra el contenido de una tienda de comida rápida",
         more: "Ver más",
         close: "Cerrar"
     },
@@ -185,11 +184,10 @@ export const proyectosData = [
         projectID: 6,
         image: Trabajo6,
         images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
-        title: "Gestor de estudiantes Java Web",
+        title: "CoC Web",
         category: "Web",
-        url: "https://github.com/AlexJmzc/WebCV",
-        descripcion: "Sistema desarrollado con Java Web que realiza el CRUD básico de " + 
-        "estudiantes.",
+        url: "https://github.com/AlexJmzc/CoCWeb",
+        descripcion: "Web Responsiva Single Page desarrollada con HTML, CSS y JavaScript que muestra contenido del juego móvil 'Clash of Clans'",
         more: "Ver más",
         close: "Cerrar"
     },
@@ -197,11 +195,10 @@ export const proyectosData = [
         projectID: 7,
         image: Trabajo7,
         images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
-        title: "Gestor de eventos académicos Angular",
+        title: "Flappy Bird",
         category: "Web",
-        url: "https://github.com/Exayfer12/cursosFISEI",
-        descripcion: "Sistema desarrollado con Angular que permite la venta de cursos, gestión " + 
-        "de la parte administrativa y generación de certificados.",
+        url: "https://github.com/AlexJmzc/FlappyBird",
+        descripcion: "Página web que simula el funcionamiento del juego llamado 'Flappy Bird'",
         more: "Ver más",
         close: "Cerrar"
     },
@@ -209,11 +206,10 @@ export const proyectosData = [
         projectID: 8,
         image: Trabajo8,
         images: [Trabajo2_1, Trabajo2_2, Trabajo2_3, Trabajo2_4, Trabajo2_5, Trabajo2_6],
-        title: "Sistema de compras móvil",
-        category: "Movil",
-        url: "https://github.com/AlexJmzc/ProyectoDistribuidas",
-        descripcion: "Sistema desarrollado en C# que simula la compra de artículos de " + 
-        "supermercado desde un smartphone.",
+        title: "Portafolio",
+        category: "Web",
+        url: "https://github.com/AlexJmzc/portafolio",
+        descripcion: "Proyecto web desarrollado con React JS que hace referencia a este portafolio web",
         more: "Ver más",
         close: "Cerrar"
     }
@@ -228,10 +224,10 @@ export const projectsNav = [
     },
     {
         name: 'Desktop',
-    },
+    }/*,
     {
         name: 'Mobile',
-    },
+    },*/
 ]
 
 export const proyectosNav = [
@@ -243,8 +239,8 @@ export const proyectosNav = [
     },
     {
         name: 'Escritorio',
-    },
+    },/*
     {
         name: 'Movil',
-    },
+    },*/
 ]
