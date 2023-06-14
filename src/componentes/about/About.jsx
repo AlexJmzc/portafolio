@@ -4,7 +4,6 @@ import { datos } from "./Data";
 import "./about.css";
 import AboutImg from "../../assets/foto2.jpeg";
 import Info from "./Info";
-import CV from "../../assets/CV.pdf";
 
 const About = ({languaje}) => {
     const[data, setData] = useState([]);
@@ -34,7 +33,7 @@ const About = ({languaje}) => {
                         {data.description}
                     </p>
 
-                    <a download="CV_Javier_Jiménez" href={CV} className="button button--flex">
+                    <a download="CV_Javier_Jimenez" href={data.cv} className="button button--flex">
                         {data.dw_title}
                     <svg
                     class="button__icon"

@@ -22,8 +22,7 @@
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    /*background-image: url('../../assets/usa.png');*/
-    background-image: url('../../assets/usa1.png');
+    background-image: url('../../assets/flags/usa1.png');
     background-position: left;
     background-repeat: no-repeat;
     -webkit-transition: .4s;
@@ -45,7 +44,7 @@
   
   input:checked + .slider {
     background-color: #2196F3;
-    background-image: url('../../assets/ec1.png');
+    background-image: url('../../assets/flags/ec1.png');
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: right;

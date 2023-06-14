@@ -11,7 +11,12 @@ const WorkItems = ({item}) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    //Carrusel de imágenes
+    const [index, setIndex] = useState(0);
 
+    const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+    };
     //Componente
     return (
        <div className="work__card" key={item.projectID}>
@@ -28,14 +33,33 @@ const WorkItems = ({item}) => {
                 <Modal.Title>{item.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                        {item.descripcion}
+                {item.descripcion}
+                        <Carousel activeIndex={index} onSelect={handleSelect}>
+                            {item.images.map(imagen => (
+                                <Carousel.Item>
+                                    
+                                    <img
+                                    src={imagen}
+                                    alt=""
+                                    />
+
+                                    <Carousel.Caption>
+                                    <h3>  </h3>
+                                    <p>
+                                       
+                                    </p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                            ))}
+                            
+                        </Carousel>
                 </Modal.Body>
                 <Modal.Footer>
                 <Button variant="outline-danger" onClick={handleClose}>
                     {item.close}
                 </Button>
                 <Button variant="outline-success" onClick={handleClose}>
-                        GitHub <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                         <a href={item.url}>GitHub <i className="bx bx-right-arrow-alt work__button-icon"></i></a>
                 </Button>
                 </Modal.Footer>
             </Modal>

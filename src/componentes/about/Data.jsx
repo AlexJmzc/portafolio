@@ -1,3 +1,6 @@
+import CV_English from "../../assets/CV_English.pdf";
+import CV_Spanish from "../../assets/CV_Castellano.pdf";
+
 export const aboutData = {
         title: "About me",
         subtitle: "My description",
@@ -16,7 +19,8 @@ export const aboutData = {
         time: "1 year",
         projects_name: 'Projects',
         projects_title: "10 + Projects",
-        support_title: "Support"
+        support_title: "Support",
+        cv: CV_English,
 };
 
 export const datos = {
@@ -38,5 +42,6 @@ export const datos = {
     time: "1 año",
     projects_name: 'Proyectos',
     projects_title: "10 + Proyectos",
-    support_title: "Soporte"
+    support_title: "Soporte",
+    cv: CV_Spanish,
 };
