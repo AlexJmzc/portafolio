@@ -16,9 +16,9 @@ function App() {
 
     <main className='main'>
       <Home languaje={languaje}/>
+      <Work languaje={languaje}/>
       <About languaje={languaje}/>
       <Skills languaje={languaje}/>
-      <Work languaje={languaje}/>
       <Contact languaje={languaje}/>
     </main>
     </>
