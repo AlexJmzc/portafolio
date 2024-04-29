@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { aboutData } from "./Data";
 import { datos } from "./Data";
 import "./about.css";
-import AboutImg from "../../assets/foto2.jpeg";
+import AboutImg from "../../assets/foto2.webp";
 import Info from "./Info";
 
 const About = ({languaje}) => {
