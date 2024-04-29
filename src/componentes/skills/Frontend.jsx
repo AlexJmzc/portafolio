@@ -26,19 +26,7 @@ const Frontend = ({data}) => {
                             <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
-                    
 
-                    <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
-                        
-                        <div>
-                            <h3 className="skills__name">JavaScript</h3>
-                            <span className="skills__level">{data.level_intermediate}</span>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="skills__group">
                     <div className="skills__data">
                         <i class="bx bx-badge-check"></i>
                         
@@ -48,7 +36,8 @@ const Frontend = ({data}) => {
                         </div>
                     </div>
                     
-
+                </div>
+                <div className="skills__group">
                     <div className="skills__data">
                         <i class="bx bx-badge-check"></i>
                         
@@ -64,6 +53,15 @@ const Frontend = ({data}) => {
                         
                         <div>
                             <h3 className="skills__name">React</h3>
+                            <span className="skills__level">{data.level_intermediate}</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i class="bx bx-badge-check"></i>
+                        
+                        <div>
+                            <h3 className="skills__name">Laravel</h3>
                             <span className="skills__level">{data.level_basic}</span>
                         </div>
                     </div>
