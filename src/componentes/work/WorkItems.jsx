@@ -17,6 +17,12 @@ const WorkItems = ({item}) => {
     const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
     };
+
+    const redirect = (url) => {
+        window.location.href = url;
+    };
+
+
     //Componente
     return (
        <div className="work__card" key={item.projectID}>
@@ -58,8 +64,8 @@ const WorkItems = ({item}) => {
                 <Button variant="outline-danger" onClick={handleClose}>
                     {item.close}
                 </Button>
-                <Button variant="outline-success" onClick={handleClose}>
-                         <a href={item.url}>GitHub <i className="bx bx-right-arrow-alt work__button-icon"></i></a>
+                <Button variant="outline-success" onClick={() => redirect(item.url)}>
+                    GitHub <i className="bx bx-right-arrow-alt work__button-icon"></i>
                 </Button>
                 </Modal.Footer>
             </Modal>
