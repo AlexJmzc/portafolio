@@ -9,7 +9,7 @@ export const homeData = {
 export const datosHome = {
         subtitle: "Desarrollador de Software",
         description: "Soy un desarrollador de software de Ambato, dedicado y responsable con mi trabajo, " +
-        "y muchas ganas de seguir ampliando mis conocimientos.",
+        "y con muchas ganas de seguir ampliando mis conocimientos.",
         contact_button: "Contáctame",
         scrollHome: "Desliza abajo"
 };

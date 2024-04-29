@@ -40,6 +40,14 @@ const Header = ({languaje, setLanguaje}) => {
 
 
                         <li className="nav__item">
+                            <a href="#portafolio" className="nav__link">
+                                <i className="uil uil-scenery nav__icon"></i>
+                                {data.portfolio}
+                            </a>
+                        </li>
+
+
+                        <li className="nav__item">
                             <a href="#about" className="nav__link">
                                 <i className="uil uil-user nav__icon"></i>
                                 {data.information}
@@ -51,14 +59,6 @@ const Header = ({languaje, setLanguaje}) => {
                             <a href="#skills" className="nav__link">
                                 <i className="uil uil-file-alt nav__icon"></i>
                                 {data.skills}
-                            </a>
-                        </li>
-
-
-                        <li className="nav__item">
-                            <a href="#portafolio" className="nav__link">
-                                <i className="uil uil-scenery nav__icon"></i>
-                                {data.portfolio}
                             </a>
                         </li>
 
