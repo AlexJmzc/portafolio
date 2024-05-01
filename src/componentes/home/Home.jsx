@@ -24,7 +24,7 @@ const Home = ({languaje}) => {
                 <div className="home__content grid">
                     <Social />
 
-                    <div className="home__img" ></div>
+                    <div className="home__img"></div>
 
                     <Data data={data}/>
                 </div>
