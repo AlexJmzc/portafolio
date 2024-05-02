@@ -64,9 +64,15 @@ const WorkItems = ({item}) => {
                 <Button variant="outline-danger" onClick={handleClose}>
                     {item.close}
                 </Button>
-                <Button variant="outline-success" onClick={() => redirect(item.url)}>
-                    GitHub <i className="bx bx-right-arrow-alt work__button-icon"></i>
-                </Button>
+                { item.urlweb === "" ? 
+                    <Button variant="outline-success" onClick={() => redirect(item.url)}>
+                        GitHub <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                    </Button>
+                    :
+                    <Button variant="outline-success" onClick={() => redirect(item.urlweb)}>
+                        Demo <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                    </Button>
+                }
                 </Modal.Footer>
             </Modal>
             

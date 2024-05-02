@@ -91,6 +91,14 @@ import Work7_1 from "../../assets/Crud/Crud1.png";
 import Work8 from "../../assets/Python/Logo.webp"; 
 import Work8_1 from "../../assets/Python/Python1.jpg";
 
+/* WORK 9 */
+import Work9 from "../../assets/COC/Main.jpg";
+import Work9_1 from "../../assets/COC/Web.png";
+
+/* WORK 10 */
+import Work10 from "../../assets/FP/Main.jpg";
+import Work10_1 from "../../assets/FP/Web1.png";
+import Work10_2 from "../../assets/FP/Web2.png";
 
 export const titles = {
     title: 'Portfolio',
@@ -111,6 +119,7 @@ export const projectsData = [
         title: "Inventory system on Laravel",
         category: "Web",
         url: "https://github.com/AlexJmzc/inventory",
+        urlweb: "",
         descripcion: "Inventory system developed with Laravel, focused on the information on the " +
         "managers, accessories and programs of each computer equipment within a company",
         more: "See more",
@@ -125,6 +134,7 @@ export const projectsData = [
         title: "Web turn managment application",
         category: "Web",
         url: "https://github.com/AlexJmzc/sistema_turnos",
+        urlweb: "",
         descripcion: "Web application for turn managment developed with React, .NET and SQL Server " + 
         "for an Ecuatorian enterprise called 'EMAPA'",
         more: "See more",
@@ -138,6 +148,7 @@ export const projectsData = [
         title: "Web Store",
         category: "Web",
         url: "https://github.com/AlexJmzc/Webapp",
+        urlweb: "",
         descripcion: "Web store developed with HTML, CSS and JavaScript focused on the sale of " + 
         "computer items online",
         more: "See more",
@@ -150,6 +161,7 @@ export const projectsData = [
         title: "Food Web Store",
         category: "Web",
         url: "https://github.com/AlexJmzc/WebStore",
+        urlweb: "https://cwebstore.netlify.app",
         descripcion: "Responsive Single Page Web Store developed with HTML, CSS and JavaScript that shows the content " + 
         " of a fast food store",
         more: "See more",
@@ -162,6 +174,7 @@ export const projectsData = [
         title: "Genetic algorithm 8 Queens Java",
         category: "Desktop",
         url: "https://github.com/AlexJmzc/8Reinas",
+        urlweb: "",
         descripcion: "System developed in Java that implements a genetic algorithm to solve " + 
         "the game of the 8 Queens",
         more: "See more",
@@ -174,6 +187,7 @@ export const projectsData = [
         title: "Algorithm A* 8puzzle Java",
         category: "Desktop",
         url: "https://github.com/AlexJmzc/8Puzzle",
+        urlweb: "",
         descripcion: "System developed in Java that implements an A* algorithm to solve the 8-puzzle game",
         more: "See more",
         close: "Close"
@@ -185,6 +199,7 @@ export const projectsData = [
         title: "CRUD",
         category: "Other",
         url: "https://github.com/AlexJmzc/CRUD",
+        urlweb: "",
         descripcion: "Repository where I keep files with examples of a basic CRUD in different languages",
         more: "See more",
         close: "Close"
@@ -196,7 +211,32 @@ export const projectsData = [
         title: "Python",
         category: "Other",
         url: "https://github.com/AlexJmzc/Python",
+        urlweb: "",
         descripcion: "Repository where I keep projects developed in Python",
+        more: "See more",
+        close: "Close"
+    },
+    {
+        projectID: 9,
+        image: Work9,
+        images: [Work9_1],
+        title: "CoC Web",
+        category: "Web",
+        url: "https://github.com/AlexJmzc/CoCWeb",
+        urlweb: "https://cocweb.netlify.app",
+        descripcion: "Responsive website developed with HTML and CSS with the theme of the Clash of Clans game",
+        more: "See more",
+        close: "Close"
+    },
+    {
+        projectID: 10,
+        image: Work10,
+        images: [Work10_1, Work10_2],
+        title: "Flappy Bird game",
+        category: "Web",
+        url: "https://github.com/AlexJmzc/FlappyBird",
+        urlweb: "https://flappybgame.netlify.app",
+        descripcion: "Web page developed with HTML, CSS and JavaScript that simulates the game Flappy Bird",
         more: "See more",
         close: "Close"
     }
@@ -211,6 +251,7 @@ export const proyectosData = [
         title: "Sistema de inventario Laravel",
         category: "Web",
         url: "https://github.com/AlexJmzc/inventory",
+        urlweb: "",
         descripcion: "Sistema de inventario desarrollado con Laravel enfocado a la información " +
         "sobre los responsables, accesorios y programas de cada equipo informático dentro de una empresa",
         more: "Ver más",
@@ -225,6 +266,7 @@ export const proyectosData = [
         title: "Aplicación web para gestión de turnos",
         category: "Web",
         url: "https://github.com/AlexJmzc/sistema_turnos",
+        urlweb: "",
         descripcion: "Aplicación web para la gestión de turnos desarrollada con React, .NET and SQL Server " + 
         "para una empresa ecuatoriana llamada 'EMAPA'",
         more: "Ver más",
@@ -238,6 +280,7 @@ export const proyectosData = [
         title: "Tienda virtual",
         category: "Web",
         url: "https://github.com/AlexJmzc/Webapp",
+        urlweb: "",
         descripcion: "Tienda web desarollada con HTML, CSS y JS enfocada a la venta de artículos " + 
         "de computación en línea",
         more: "Ver más",
@@ -250,6 +293,7 @@ export const proyectosData = [
         title: "Tienda online de comida",
         category: "Web",
         url: "https://github.com/AlexJmzc/WebStore",
+        urlweb: "",
         descripcion: "Tienda Web Responsiva Single Page desarrollada con HTML, CSS y JavaScript que " +
         "muestra el contenido de una tienda de comida rápida",
         more: "Ver más",
@@ -262,6 +306,7 @@ export const proyectosData = [
         title: "Algoritmo genético 8reinas Java",
         category: "Escritorio",
         url: "https://github.com/AlexJmzc/8Reinas",
+        urlweb: "",
         descripcion: "Sistema desarrollado en Java que implementa un algoritmo genético" + 
         " para resolver el juego de las 8 Reinas",
         more: "Ver más",
@@ -274,6 +319,7 @@ export const proyectosData = [
         title: "Algoritmo A* 8puzzle Java",
         category: "Escritorio",
         url: "https://github.com/AlexJmzc/8Puzzle",
+        urlweb: "",
         descripcion: "Sistema desarrollado en Java que implementa un algoritmo A* para la resolución del " +
         "juego 8-Puzzle",
         more: "Ver más",
@@ -286,6 +332,7 @@ export const proyectosData = [
         title: "CRUD",
         category: "Otro",
         url: "https://github.com/AlexJmzc/CRUD",
+        urlweb: "",
         descripcion: "Repositorio en el que guardo archivos con ejemplos de un CRUD básico en diferentes lenguajes",
         more: "Ver más",
         close: "Cerrar"
@@ -297,7 +344,32 @@ export const proyectosData = [
         title: "Python",
         category: "Otro",
         url: "https://github.com/AlexJmzc/Python",
+        urlweb: "",
         descripcion: "Repositorio en el que guardo proyectos hechos en Python",
+        more: "Ver más",
+        close: "Cerrar"
+    },
+    {
+        projectID: 9,
+        image: Work9,
+        images: [Work9_1],
+        title: "CoC Web",
+        category: "Web",
+        url: "https://github.com/AlexJmzc/CoCWeb",
+        urlweb: "https://cocweb.netlify.app",
+        descripcion: "Página web resposiva desarollada con HTML y CSS con temática del juego Clash of Clans",
+        more: "Ver más",
+        close: "Cerrar"
+    },
+    {
+        projectID: 10,
+        image: Work10,
+        images: [Work10_1, Work10_2],
+        title: "Juego Flappy Bird",
+        category: "Web",
+        url: "https://github.com/AlexJmzc/FlappyBird",
+        urlweb: "https://flappybgame.netlify.app",
+        descripcion: "Página web desarrollada con HTML, CSS y JavaScript que simula el juego Flappy Bird",
         more: "Ver más",
         close: "Cerrar"
     }
