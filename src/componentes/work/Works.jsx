@@ -19,7 +19,7 @@ const Works = ({languaje, nav}) => {
         if(item.name === "All" || item.name === "Todos") {
             //setProjects(dataWorks);
             const newProjects = dataWorks.filter((project) => {
-                return project.category != 'Otro' & project.category != 'Other';
+                return project.category !== 'Otro' & project.category !== 'Other';
             });
 
             setProjects(newProjects);

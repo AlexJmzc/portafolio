@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./work.css";
-import { proyectosData, projectsNav, proyectosNav, projectsData, titles, titulos } from "./Data";
+import { projectsNav, proyectosNav, titles, titulos } from "./Data";
 import Works from "./Works";
 
 const Work = ({languaje}) => {
