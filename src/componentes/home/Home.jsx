@@ -16,7 +16,7 @@ const Home = ({languaje}) => {
         } else {
             setData(datosHome);
         }
-    });
+    }, [languaje]);
 
     return (
         <section className="home section" id="home">

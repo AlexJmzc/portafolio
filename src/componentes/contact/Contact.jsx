@@ -12,7 +12,7 @@ const Contact = ({languaje}) => {
         } else {
             setData(datosContacto);
         }
-    })
+    }, [languaje])
 
     const form = useRef();
 

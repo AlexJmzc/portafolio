@@ -14,7 +14,7 @@ const Skills = ({languaje}) => {
         } else {
             setData(datosSkills);
         }
-    })
+    }, [languaje])
 
     return (
         <section className="skills section" id="skills">

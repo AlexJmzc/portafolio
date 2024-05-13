@@ -15,7 +15,7 @@ const Work = ({languaje}) => {
             setNav(proyectosNav);
             setTitle(titulos);
         }
-    })
+    }, [languaje])
 
     return (
        <section className="portafolio section" id="portafolio">

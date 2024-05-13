@@ -14,7 +14,7 @@ const About = ({languaje}) => {
         } else {
             setData(datos);
         }
-    })
+    }, [languaje])
 
     return (
         <section className="about section" id="about">
