@@ -29,7 +29,7 @@ const WorkItems = ({item}) => {
             <img src={item.image} alt="" className="work__img"/>
             <h3 className="work__title">{item.title}</h3>
             <Button variant="outline-light" onClick={handleShow}>
-                <a className="work__button">
+                <a className="work__button" href="">
                     {item.more} <i className="bx bx-right-arrow-alt work__button-icon"></i>
                 </a>
             </Button>
