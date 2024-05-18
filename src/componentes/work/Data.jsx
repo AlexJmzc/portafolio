@@ -148,11 +148,11 @@ export const projectsData = [
         projectID: 3,
         image: Work3,
         images: [Work3_1],  
-        title: 'Refugees Web',
+        title: 'Animal shelters Web',
         category: 'Web',
         url: 'https://github.com/AlexJmzc/refugios',
         urlweb: 'https://refugiosanimales.netlify.app',
-        descripcion: 'Web to show refugees information developed with React and Tailwind CSS',
+        descripcion: 'Web to show animal shelters information developed with React and Tailwind CSS',
         more: 'See more',
         close: 'Close'
     },
