@@ -1,10 +1,10 @@
 import React from "react";
 
 
-const Frontend = ({data}) => {
+const Other = ({data}) => {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Frontend</h3>
+            <h3 className="skills__title">Other</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -12,7 +12,7 @@ const Frontend = ({data}) => {
                         <i class="bx bx-badge-check"></i>
                         
                         <div>
-                            <h3 className="skills__name">HTML</h3>
+                            <h3 className="skills__name">Git</h3>
                             <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
@@ -22,17 +22,18 @@ const Frontend = ({data}) => {
                         <i class="bx bx-badge-check"></i>
                         
                         <div>
-                            <h3 className="skills__name">CSS</h3>
+                            <h3 className="skills__name">Github</h3>
                             <span className="skills__level">{data.level_intermediate}</span>
                         </div>
                     </div>
+                    
 
                     <div className="skills__data">
                         <i class="bx bx-badge-check"></i>
                         
                         <div>
-                            <h3 className="skills__name">Tailwind</h3>
-                            <span className="skills__level">{data.level_intermediate}</span>
+                            <h3 className="skills__name">Figma</h3>
+                            <span className="skills__level">{data.level_basic}</span>
                         </div>
                     </div>
                     
@@ -42,25 +43,27 @@ const Frontend = ({data}) => {
                         <i class="bx bx-badge-check"></i>
                         
                         <div>
-                            <h3 className="skills__name">React</h3>
-                            <span className="skills__level">{data.level_intermediate}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
-                        
-                        <div>
-                            <h3 className="skills__name">Laravel</h3>
+                            <h3 className="skills__name">Scrum</h3>
                             <span className="skills__level">{data.level_basic}</span>
                         </div>
                     </div>
+                    
 
                     <div className="skills__data">
                         <i class="bx bx-badge-check"></i>
                         
                         <div>
-                            <h3 className="skills__name">Bootstrap</h3>
+                            <h3 className="skills__name">Docker</h3>
+                            <span className="skills__level">{data.level_basic}</span>
+                        </div>
+                    </div>
+                    
+
+                    <div className="skills__data">
+                        <i class="bx bx-badge-check"></i>
+                        
+                        <div>
+                            <h3 className="skills__name">Jest</h3>
                             <span className="skills__level">{data.level_basic}</span>
                         </div>
                     </div>
@@ -72,4 +75,4 @@ const Frontend = ({data}) => {
     )
 }
 
-export default Frontend
+export default Other

@@ -4,6 +4,8 @@ import { skillsData } from "./Data";
 import { datosSkills } from "./Data";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
+import Other from "./Other";
+import Languages from "./Languages";
 
 const Skills = ({languaje}) => {
     const[data, setData] = useState([]);
@@ -26,6 +28,8 @@ const Skills = ({languaje}) => {
             <div className="skills__container grid">
                 <Frontend data={data}/>
                 <Backend data={data}/>
+                <Other data={data}/>
+                <Languages data={data}/>
             </div>
         </section>
     )
