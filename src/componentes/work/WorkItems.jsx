@@ -29,9 +29,9 @@ const WorkItems = ({item}) => {
             <img src={item.image} alt="" className="work__img"/>
             <h3 className="work__title">{item.title}</h3>
             <Button variant="outline-light" onClick={handleShow}>
-                <a className="work__button" href="/#">
+                <div className="work__button">
                     {item.more} <i className="bx bx-right-arrow-alt work__button-icon"></i>
-                </a>
+                </div>
             </Button>
 
             <Modal show={show} onHide={handleClose}>
@@ -39,7 +39,9 @@ const WorkItems = ({item}) => {
                 <Modal.Title>{item.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                {item.descripcion}
+                {item.description} <br /><br />
+                <h4>{item.technologies}</h4> <br />
+                {item.observation !== '' ? item.observation : ''}
                         <Carousel activeIndex={index} onSelect={handleSelect}>
                             {item.images.map(imagen => (
                                 <Carousel.Item>
