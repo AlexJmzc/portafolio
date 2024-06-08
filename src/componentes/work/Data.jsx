@@ -57,52 +57,56 @@ import Work4_10 from '../../assets/Webapp/Webapp10.webp';
 import Work4_11 from '../../assets/Webapp/Webapp11.webp';
 
 /* WORK 5 */
-import Work5 from '../../assets/WebStore/Food.jpg';
-import Work5_1 from '../../assets/WebStore/WebStore1.png';
-import Work5_2 from '../../assets/WebStore/WebStore2.png';
-import Work5_3 from '../../assets/WebStore/WebStore3.png';
-import Work5_4 from '../../assets/WebStore/WebStore4.png';
-import Work5_5 from '../../assets/WebStore/WebStore5.png';
-import Work5_6 from '../../assets/WebStore/WebStore6.png';
-import Work5_7 from '../../assets/WebStore/WebStore7.png';
-import Work5_8 from '../../assets/WebStore/WebStore8.png';
-import Work5_9 from '../../assets/WebStore/WebStore9.png';
+import Work5 from '../../assets/OnlineStore/Store1.webp';
+import Work5_1 from '../../assets/OnlineStore/Store2.png';
 
 /* WORK 6 */
-import Work6 from '../../assets/Geneticos/8reinas.jpg';
-import Work6_1 from '../../assets/Geneticos/Genetico1.png';
-import Work6_2 from '../../assets/Geneticos/Genetico2.png';
-import Work6_3 from '../../assets/Geneticos/Genetico3.png';
-import Work6_4 from '../../assets/Geneticos/Genetico4.png';
-import Work6_5 from '../../assets/Geneticos/Genetico5.png';
-import Work6_6 from '../../assets/Geneticos/Genetico6.png';
-import Work6_7 from '../../assets/Geneticos/Genetico7.png';
-import Work6_8 from '../../assets/Geneticos/Genetico8.png';
+import Work6 from '../../assets/WebStore/Food.jpg';
+import Work6_1 from '../../assets/WebStore/WebStore1.png';
+import Work6_2 from '../../assets/WebStore/WebStore2.png';
+import Work6_3 from '../../assets/WebStore/WebStore3.png';
+import Work6_4 from '../../assets/WebStore/WebStore4.png';
+import Work6_5 from '../../assets/WebStore/WebStore5.png';
+import Work6_6 from '../../assets/WebStore/WebStore6.png';
+import Work6_7 from '../../assets/WebStore/WebStore7.png';
+import Work6_8 from '../../assets/WebStore/WebStore8.png';
+import Work6_9 from '../../assets/WebStore/WebStore9.png';
 
 /* WORK 7 */
-import Work7 from '../../assets/A/8puzzle.png';
-import Work7_1 from '../../assets/A/Estrella1.png';
-import Work7_2 from '../../assets/A/Estrella2.png';
-import Work7_3 from '../../assets/A/Estrella3.png';
-import Work7_4 from '../../assets/A/Estrella4.png';
-import Work7_5 from '../../assets/A/Estrella5.png';
+import Work7 from '../../assets/Geneticos/8reinas.jpg';
+import Work7_1 from '../../assets/Geneticos/Genetico1.png';
+import Work7_2 from '../../assets/Geneticos/Genetico2.png';
+import Work7_3 from '../../assets/Geneticos/Genetico3.png';
+import Work7_4 from '../../assets/Geneticos/Genetico4.png';
+import Work7_5 from '../../assets/Geneticos/Genetico5.png';
+import Work7_6 from '../../assets/Geneticos/Genetico6.png';
+import Work7_7 from '../../assets/Geneticos/Genetico7.png';
+import Work7_8 from '../../assets/Geneticos/Genetico8.png';
 
 /* WORK 8 */
-import Work8 from '../../assets/Crud/CRUD.jpeg';
-import Work8_1 from '../../assets/Crud/Crud1.png';
+import Work8 from '../../assets/A/8puzzle.png';
+import Work8_1 from '../../assets/A/Estrella1.png';
+import Work8_2 from '../../assets/A/Estrella2.png';
+import Work8_3 from '../../assets/A/Estrella3.png';
+import Work8_4 from '../../assets/A/Estrella4.png';
+import Work8_5 from '../../assets/A/Estrella5.png';
 
 /* WORK 9 */
-import Work9 from '../../assets/Python/Logo.webp'; 
-import Work9_1 from '../../assets/Python/Python1.jpg';
+import Work9 from '../../assets/Crud/CRUD.jpeg';
+import Work9_1 from '../../assets/Crud/Crud1.png';
 
 /* WORK 10 */
-import Work10 from '../../assets/COC/Main.jpg';
-import Work10_1 from '../../assets/COC/Web.png';
+import Work10 from '../../assets/Python/Logo.webp'; 
+import Work10_1 from '../../assets/Python/Python1.jpg';
 
 /* WORK 11 */
-import Work11 from '../../assets/FP/Main.jpg';
-import Work11_1 from '../../assets/FP/Web1.png';
-import Work11_2 from '../../assets/FP/Web2.png';
+import Work11 from '../../assets/COC/Main.jpg';
+import Work11_1 from '../../assets/COC/Web.png';
+
+/* WORK 12 */
+import Work12 from '../../assets/FP/Main.jpg';
+import Work12_1 from '../../assets/FP/Web1.png';
+import Work12_2 from '../../assets/FP/Web2.png';
 
 export const titles = {
     title: 'Portfolio',
@@ -179,7 +183,21 @@ export const projectsData = [
     {
         projectID: 5,
         image: Work5,
-        images: [Work5_1, Work5_2, Work5_3, Work5_4, Work5_5, Work5_6, Work5_7, Work5_8, Work5_9],
+        images: [Work5_1],
+        title: 'X6 Web Store',
+        category: 'Web',
+        url: 'https://github.com/AlexJmzc/onlinestore',
+        urlweb: 'https://x6techstore.netlify.app/',
+        description: 'New version of my previous project Web Store.',
+        technologies: 'Technologies: React + Typescript and Tailwind CSS.',
+        observation: 'In development',
+        more: 'See more',
+        close: 'Close'
+    },
+    {
+        projectID: 6,
+        image: Work6,
+        images: [Work6_1, Work6_2, Work6_3, Work6_4, Work6_5, Work6_6, Work6_7, Work6_8, Work6_9],
         title: 'Food Web Store',
         category: 'Web',
         url: 'https://github.com/AlexJmzc/WebStore',
@@ -191,9 +209,9 @@ export const projectsData = [
         close: 'Close'
     },
     {
-        projectID: 6,
-        image: Work6,
-        images: [Work6_1, Work6_2, Work6_3, Work6_4, Work6_5, Work6_6, Work6_7, Work6_8],
+        projectID: 7,
+        image: Work7,
+        images: [Work7_1, Work7_2, Work7_3, Work7_4, Work7_5, Work7_6, Work7_7, Work7_8],
         title: 'Genetic algorithm 8 Queens Java',
         category: 'Desktop',
         url: 'https://github.com/AlexJmzc/8Reinas',
@@ -205,9 +223,9 @@ export const projectsData = [
         close: 'Close'
     },
     {
-        projectID: 7,
-        image: Work7,
-        images: [Work7_1, Work7_2, Work7_3, Work7_4, Work7_5],
+        projectID: 8,
+        image: Work8,
+        images: [Work8_1, Work8_2, Work8_3, Work8_4, Work8_5],
         title: 'Algorithm A* 8puzzle Java',
         category: 'Desktop',
         url: 'https://github.com/AlexJmzc/8Puzzle',
@@ -219,9 +237,9 @@ export const projectsData = [
         close: 'Close'
     },
     {
-        projectID: 8,
-        image: Work8,
-        images: [Work8_1],
+        projectID: 9,
+        image: Work9,
+        images: [Work9_1],
         title: 'CRUD',
         category: 'Other',
         url: 'https://github.com/AlexJmzc/CRUD',
@@ -233,9 +251,9 @@ export const projectsData = [
         close: 'Close'
     },
     {
-        projectID: 9,
-        image: Work9,
-        images: [Work9_1],
+        projectID: 10,
+        image: Work10,
+        images: [Work10_1],
         title: 'Python',
         category: 'Other',
         url: 'https://github.com/AlexJmzc/Python',
@@ -247,9 +265,9 @@ export const projectsData = [
         close: 'Close'
     },
     {
-        projectID: 10,
-        image: Work10,
-        images: [Work10_1],
+        projectID: 11,
+        image: Work11,
+        images: [Work11_1],
         title: 'CoC Web',
         category: 'Web',
         url: 'https://github.com/AlexJmzc/CoCWeb',
@@ -261,9 +279,9 @@ export const projectsData = [
         close: 'Close'
     },
     {
-        projectID: 11,
-        image: Work11,
-        images: [Work11_1, Work11_2],
+        projectID: 12,
+        image: Work12,
+        images: [Work12_1, Work12_2],
         title: 'Flappy Bird game',
         category: 'Web',
         url: 'https://github.com/AlexJmzc/FlappyBird',
@@ -341,7 +359,21 @@ export const proyectosData = [
     {
         projectID: 5,
         image: Work5,
-        images: [Work5_1, Work5_2, Work5_3, Work5_4, Work5_5, Work5_6, Work5_7, Work5_8, Work5_9],
+        images: [Work5_1],
+        title: 'X6 Tienda virtual',
+        category: 'Web',
+        url: 'https://github.com/AlexJmzc/onlinestore',
+        urlweb: 'https://x6techstore.netlify.app/',
+        description: 'NNueva versión de mi anterior proyecto Tienda Virtual.',
+        technologies: 'Tecnologías: React + Typescript y Tailwind CSS.',
+        observation: 'En desarrollo',
+        more: 'Ver más',
+        close: 'Cerrar'
+    },
+    {
+        projectID: 6,
+        image: Work6,
+        images: [Work6_1, Work6_2, Work6_3, Work6_4, Work6_5, Work6_6, Work6_7, Work6_8, Work6_9],
         title: 'Tienda online de comida',
         category: 'Web',
         url: 'https://github.com/AlexJmzc/WebStore',
@@ -353,9 +385,9 @@ export const proyectosData = [
         close: 'Cerrar'
     },
     {
-        projectID: 6,
-        image: Work6,
-        images: [Work6_1, Work6_2, Work6_3, Work6_4, Work6_5, Work6_6, Work6_7, Work6_8],
+        projectID: 7,
+        image: Work7,
+        images: [Work7_1, Work7_2, Work7_3, Work7_4, Work7_5, Work7_6, Work7_7, Work7_8],
         title: 'Algoritmo genético 8reinas Java',
         category: 'Escritorio',
         url: 'https://github.com/AlexJmzc/8Reinas',
@@ -367,9 +399,9 @@ export const proyectosData = [
         close: 'Cerrar'
     },
     {
-        projectID: 7,
-        image: Work7,
-        images: [Work7_1, Work7_2, Work7_3, Work7_4, Work7_5],
+        projectID: 8,
+        image: Work8,
+        images: [Work8_1, Work8_2, Work8_3, Work8_4, Work8_5],
         title: 'Algoritmo A* 8puzzle Java',
         category: 'Escritorio',
         url: 'https://github.com/AlexJmzc/8Puzzle',
@@ -381,9 +413,9 @@ export const proyectosData = [
         close: 'Cerrar'
     },
     {
-        projectID: 8,
-        image: Work8,
-        images: [Work8_1],
+        projectID: 9,
+        image: Work9,
+        images: [Work9_1],
         title: 'CRUD',
         category: 'Otro',
         url: 'https://github.com/AlexJmzc/CRUD',
@@ -395,9 +427,9 @@ export const proyectosData = [
         close: 'Cerrar'
     },
     {
-        projectID: 9,
-        image: Work9,
-        images: [Work9_1],
+        projectID: 10,
+        image: Work10,
+        images: [Work10_1],
         title: 'Python',
         category: 'Otro',
         url: 'https://github.com/AlexJmzc/Python',
@@ -409,9 +441,9 @@ export const proyectosData = [
         close: 'Cerrar'
     },
     {
-        projectID: 10,
-        image: Work10,
-        images: [Work10_1],
+        projectID: 11,
+        image: Work11,
+        images: [Work11_1],
         title: 'CoC Web',
         category: 'Web',
         url: 'https://github.com/AlexJmzc/CoCWeb',
@@ -423,9 +455,9 @@ export const proyectosData = [
         close: 'Cerrar'
     },
     {
-        projectID: 11,
-        image: Work11,
-        images: [Work11_1, Work11_2],
+        projectID: 12,
+        image: Work12,
+        images: [Work12_1, Work12_2],
         title: 'Juego Flappy Bird',
         category: 'Web',
         url: 'https://github.com/AlexJmzc/FlappyBird',
