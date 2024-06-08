@@ -7,7 +7,7 @@ export const aboutData = {
         description: "I am a frontend and backend developer committed to creating quality solutions " +
             "for my clients. " +
             "I can work with different languages ​​and frameworks, " +
-            "including JavaScript, HTML, CSS, and frameworks like React, Angular and Laravel. "  +
+            "including JavaScript, HTML, CSS, and frameworks like React and Laravel. "  +
             "In my free time, I enjoy playing video-games with friends. Not only is it a fun and " + 
             "exciting hobby, but it also helps me to be a better developer. Playing video games requires quick thinking, teamwork, " +
             "problem-solving skills and the ability to work well under pressure. Furthermore, being part of a team, helps me to better " +
@@ -27,7 +27,7 @@ export const datos = {
     description: "Soy un desarrollador frontend y backend comprometido con la creación de soluciones de calidad " + 
         "para mis clientes. " +
         "Puedo trabajar con diferentes lenguajes y frameworks, " +
-        "incluyendo JavaScript, HTML, CSS y frameworks como React, Angular y Laravel. " + 
+        "incluyendo JavaScript, HTML, CSS y frameworks como React y Laravel. " + 
         "En mi tiempo libre, disfruto jugando videojuegos con amigos. No solo es un pasatiempo divertido " +
         "y emocionante, sino que también me ayuda a ser un mejor desarrollador. Jugar videojuegos requiere pensar " +
         "rápido, trabajar en equipo, habilidades para resolver problemas y la capacidad de trabajar bien bajo presión. " + 
