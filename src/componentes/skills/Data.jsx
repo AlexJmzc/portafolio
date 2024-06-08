@@ -5,6 +5,8 @@ export const skillsData = {
     spanish: "Spanish",
     french: "French",
     english: "English",
+    languages: "Languages",
+    others: "Others",
     native: "Native",
     subtitle: "My technical level"
 }
@@ -16,6 +18,8 @@ export const datosSkills = {
     spanish: "Español",
     french: "Francés",
     english: "Inglés",
+    languages: "Idiomas",
+    others: "Otros",
     native: "Nativo",
     subtitle: "Mi nivel técnico"
 }

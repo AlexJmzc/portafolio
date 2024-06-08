@@ -4,7 +4,7 @@ import React from "react";
 const Languages = ({data}) => {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Languages</h3>
+            <h3 className="skills__title">{data.languages}</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
